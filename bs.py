@@ -15,7 +15,7 @@ def binary_search(lst, value, low, high):
         if slot == value:
             return mid
         elif slot < value:
-            low = mid
+            low = mid + 1
         else:
             high = mid - 1
     return binary_search(lst, value, low, high)
