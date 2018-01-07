@@ -14,7 +14,7 @@ while True:
     try:
         first_number = int(input())
         second_number = int(input())
-        method = input().lower()
+        method = input().lower().strip()
 
         print(methods[method](first_number, second_number))
 
