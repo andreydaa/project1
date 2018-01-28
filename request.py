@@ -21,13 +21,13 @@ def main():
     text = check_link(a_link)
     a_links = rg.findall(text)
 
-    for a in a_links:
-        text = check_link(a)
+    for l in a_links:
+        text = check_link(l)
         links = rg.findall(text)
         if any(link == b_link for link in links):
             return 'Yes'
     return 'No'
-            
+
 
 if __name__ == '__main__':
     print(main())
