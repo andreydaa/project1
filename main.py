@@ -3,6 +3,7 @@
 
 from bs import binary_search
 
+
 def main():
     """main function"""
     lst = [int(i) for i in input().split()]
@@ -12,6 +13,7 @@ def main():
     high = len(lst) - 1
 
     print(binary_search(lst, value, low, high))
+
 
 if __name__ == '__main__':
     main()

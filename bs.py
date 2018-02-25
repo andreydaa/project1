@@ -5,6 +5,7 @@ Based on book "Grokking Algorithms".
 https://github.com/egonSchiele/grokking_algorithms
 """
 
+
 def binary_search(lst, value, low, high):
     """binary search method"""
     if low > high:
