@@ -7,9 +7,8 @@ def main():
     num_sqr = list(range(1, num ** 2 + 1))
 
     f = num - 1
-    num += f
     i, lot, count = 0, 0, 0
-    for _ in range(num):
+    for _ in range(num+f):
         count += 1
         for j in range(i, f+1):
             if count == 1:
