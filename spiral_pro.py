@@ -6,16 +6,15 @@ def main():
     nums = [[0] * num for _ in range(num)]
 
     i, j = 0, 0
-    f = num - 1
     lot, count = 1, 1
 
     for _ in range(num*num):
         
-        for j in range(j, f+1):
+        for j in range(j, num):
             nums[i][j] = lot
             lot += 1
         
-        for i in range(i+1, f+1):
+        for i in range(i+1, num):
             nums[i][j] = lot
             lot += 1
         
@@ -27,8 +26,8 @@ def main():
             nums[j][i] = lot
             lot += 1
         
-        f -= 1
         i += 1
+        num -= 1
         count += 1
     
     for line in nums:
