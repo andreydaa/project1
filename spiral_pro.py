@@ -8,7 +8,7 @@ def main():
     i, j = 0, 0
     lot, count = 1, 1
 
-    for _ in range(num*num):
+    for _ in range(num-num//2):
         
         for j in range(j, num):
             nums[i][j] = lot
