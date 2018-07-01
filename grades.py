@@ -4,12 +4,14 @@ import json
 
 
 def total(name, parents, grades, rest):
+
     for parent in parents:
         rest[parent].add(name)
         total(name, grades[parent], grades, rest)
 
 
 def main():
+    
     data = json.loads(input())
     grades, rest = {}, {}
 

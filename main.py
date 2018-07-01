@@ -5,6 +5,7 @@ from bs import binary_search
 
 
 def main():
+    
     """main function"""
     lst = [int(i) for i in input().split()]
     lst.sort()

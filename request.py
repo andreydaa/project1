@@ -5,6 +5,7 @@ import requests
 
 
 def check_link(link):
+
     try:
         resp = requests.get(link)
     except requests.exceptions.HTTPError:
@@ -15,6 +16,7 @@ def check_link(link):
 
 
 def main():
+    
     a_link, b_link = input(), input()
     rg = re.compile(r'<a href="(\S+)"[^>]*>\w+</a>', re.DOTALL)
 

@@ -4,6 +4,7 @@ GLOBAL = 'global'
 
 
 def get(namespaces, name, var):
+
     if var in namespaces[name]['variables']:
         return name
     elif name == GLOBAL:
@@ -13,6 +14,7 @@ def get(namespaces, name, var):
 
 
 def main():
+    
     count = int(input())
     namespaces = {GLOBAL: {'parents': None, 'variables': []}}
     for _ in range(count):

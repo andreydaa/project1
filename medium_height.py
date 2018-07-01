@@ -4,6 +4,7 @@ from collections import OrderedDict
 
 
 def main():
+    
     results = OrderedDict({i: [] for i in range(1, 12)})
 
     with open('example.txt', 'r') as f:

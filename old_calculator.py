@@ -2,6 +2,7 @@
 
 
 def main():
+    
     numbers = input()
 
     nums = {

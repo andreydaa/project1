@@ -2,6 +2,7 @@
 
 
 def main():
+    
     num = int(input())
     nums = [[0] * num for _ in range(num)]
     num_sqr = list(range(1, num ** 2 + 1))
